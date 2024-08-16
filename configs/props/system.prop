@@ -87,6 +87,34 @@ ro.mediatek.version.build.branch=
 ro.mediatek.version.release=alps-mp-t0.mp1.tc16sp-pr2-V1
 ro.mediatek.wlan.p2p=1
 ro.mediatek.wlan.wsc=1
+	
+# Hardware Acceleration
+video.accelerate.hw=1
+debug.sf.hw=1
+debug.performance.tuning=1
+debug.egl.profiler=1
+debug.egl.hw=1
+debug.composition.type=gpu
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+	
+# NFC
+persist.sys.nfc.disPowerSave=1
+persist.sys.nfc.default=on
+persist.sys.nfc.aid_overflow=true
+ro.product.cuptsm=OPPO|ESE|01|02
+persist.sys.nfc.antenna_area=bottom
+
+# OMX
+debug.stagefright.omx_default_rank.sw-audio=1
+debug.stagefright.omx_default_rank=1000
+debug.stagefright.ccodec=0
+
+# Performance
+ro.mtk_perf_simple_start_win=1
 ro.mtk_perf_fast_start_win=1
 ro.mtk_perf_response_time=1
 ro.mtk_perf_simple_start_win=1

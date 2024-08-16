@@ -132,9 +132,29 @@ PRODUCT_PACKAGES += \
 -include $(DEVICE_PATH)/configs/props/product.prop
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# Recovery
+PRODUCT_PACKAGES += \    
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt676:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768 \
+    init.recovery.mt6768.rc
+	
+# RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt676:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768
+# Screen density
+PRODUCT_AAPT_CONFIG := xxxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
+
+# Screen Recorder
+PRODUCT_PACKAGES += \
+    ScreenRecorder
+	
+# Speed up
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    Settings \
+    SystemUI
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
