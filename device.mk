@@ -67,6 +67,17 @@ PRODUCT_PACKAGES += \
     meta_init.vendor.rc \
     multi_init.rc \
 
+# MTK IMS Overlays
+PRODUCT_PACKAGES += \
+    mtk-ims \
+    mtk-ims-telephony    
+
+# Properties
+-include $(DEVICE_PATH)/configs/props/system.prop
+-include $(DEVICE_PATH)/configs/props/product.prop
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt676:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768
 
