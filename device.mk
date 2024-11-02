@@ -37,7 +37,7 @@ PRODUCT_PACKAGES += \
     swap_enable.sh \
 
 PRODUCT_PACKAGES += \
-    fstab.enableswap \
+    fstab.mt6768 \
     factory_init.connectivity.common.rc \
     factory_init.connectivity.rc \
     factory_init.project.rc \
@@ -62,7 +62,7 @@ PRODUCT_PACKAGES += \
     multi_init.rc \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.enableswap:$(TARGET_COPY_OUT_RAMDISK)/fstab.enableswap
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt676:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
