@@ -11,13 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from ossi device
-$(call inherit-product, device/oplus/ossi/device.mk)
+# Inherit from even device
+$(call inherit-product, device/oplus/even/device.mk)
 
-PRODUCT_DEVICE := ossi
-PRODUCT_NAME := lineage_ossi
+PRODUCT_DEVICE := even
+PRODUCT_NAME := lineage_even
 PRODUCT_BRAND := oplus
-PRODUCT_MODEL := ossi
+PRODUCT_MODEL := even
 PRODUCT_MANUFACTURER := oplus
 
 PRODUCT_GMS_CLIENTID_BASE := android-oplus
