@@ -134,7 +134,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Recovery
 PRODUCT_PACKAGES += \    
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt676:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768 \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768 \
     init.recovery.mt6768.rc
 	
 # RemovePackages
